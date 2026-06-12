@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MusicMantap</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="Music.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="logo">
+      <i class="ti ti-music"></i>
+      MusicMantap
+    </div>
+
+    <nav class="nav-section">
+      <a class="nav-item active" >
+        <i class="ti ti-home"></i> Home
+      </a>
+      <a href="Kategori.html" class="nav-item">
+        <i class="ti ti-layout-grid"></i>Kategori
+      </a>
+      <a href="Koleksi.html" class="nav-item">
+        <i class="ti ti-user"></i> Koleksi
+      </a>
+    </nav>
+
+    <div class="playlist-section">
+      <div class="playlist-header">
+        <i class="ti ti-list"></i>
+        Playlists
+        <i class="ti ti-chevron-down arrow"></i>
+      </div>
+
+      <div class="playlist-item">
+        <div class="pl-thumb pl-1"></div>
+        Playlist Yudis
+      </div>
+
+      <div class="playlist-item">
+        <div class="pl-thumb pl-2"></div>
+        Playlist Fardhan
+      </div>
+
+      <div class="playlist-item">
+        <div class="pl-thumb pl-3"></div>
+        Playlist Reyhan
+      </div>
+
+      <div class="playlist-item">
+        <div class="pl-thumb pl-4"></div>
+        Playlist Lita 
+      </div>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="logout-btn">
+        Logout
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ══════════════════════════════════════════════════
+      MAIN CONTENT
+  ══════════════════════════════════════════════════ -->
+  <main class="main">
+
+    <!-- ── Top Bar ─────────────────────────────────── -->
+    <div class="topbar">
+      <div class="search-wrap">
+        <i class="ti ti-search"></i>
+        <input class="search-input" type="text" placeholder="Search for a song, artist or album" />
+      </div>
+      <div class="topbar-right">
+        <div class="user-chip">
+          <div class="avatar">MH</div>
+          <div>
+            <div class="user-name">Molly Hunter</div>
+            <div class="user-tag">Premium</div>
+          </div>
+        </div>
+        <div class="icon-btn"><i class="ti ti-heart"></i></div>
+        <div class="icon-btn"><i class="ti ti-settings"></i></div>
+      </div>
+    </div>
+
+    <!-- ── Page Content ─────────────────────────────── -->
+    <div class="content">
+
+      <!-- Hero Carousel -->
+      <div class="hero-wrap">
+        <div class="hero-card sm">
+          <div class="card-bg g-purple"></div>
+        </div>
+        <div class="hero-card sm">
+          <div class="card-bg g-blue"></div>
+        </div>
+        <div class="hero-card lg">
+          <div class="card-bg g-orange"></div>
+          <div class="hero-meta">
+            <h2>Echoes of Midnight</h2>
+            <p>Jon Hickman</p>
+          </div>
+          <div class="hero-play" onclick="togglePlay()">
+            <i class="ti ti-player-play" id="hero-icon"></i>
+          </div>
+        </div>
+        <div class="hero-card sm">
+          <div class="card-bg g-teal"></div>
+        </div>
+        <div class="hero-card sm">
+          <div class="card-bg g-rose"></div>
+        </div>
+      </div>
+
+      <!-- Categories -->
+      <div class="section-hdr">
+        <h3>Select Categories</h3>
+        <div class="nav-arrow"><i class="ti ti-chevron-right"></i></div>
+      </div>
+      <div class="categories">
+        <div class="cat-pill active">All</div>
+        <div class="cat-pill">Relax</div>
+        <div class="cat-pill">Sad</div>
+        <div class="cat-pill">Party</div>
+        <div class="cat-pill">Romance</div>
+        <div class="cat-pill">Energetic</div>
+        <div class="cat-pill">Jazz</div>
+        <div class="cat-pill">Alternative</div>
+        <div class="cat-pill">Hip-hop</div>
+        <div class="cat-pill">Classical</div>
+      </div>
+
+      <!-- Popular Songs -->
+      <div class="section-hdr">
+        <h3>Popular songs</h3>
+        <div class="nav-arrow"><i class="ti ti-chevron-right"></i></div>
+      </div>
+      <div class="songs-grid">
+
+        <div class="song-card">
+          <div class="song-thumb">
+            <div class="song-cover g-orange"></div>
+            <div class="song-overlay">
+              <div class="mini-play"><i class="ti ti-player-play"></i></div>
+            </div>
+          </div>
+          <div class="song-title">Golden Days</div>
+          <div class="song-artist">Felix Carter</div>
+        </div>
+
+        <div class="song-card">
+          <div class="song-thumb">
+            <div class="song-cover g-teal"></div>
+            <div class="song-overlay">
+              <div class="mini-play"><i class="ti ti-player-play"></i></div>
+            </div>
+          </div>
+          <div class="song-title">Fading Horizon</div>
+          <div class="song-artist">Ella Hunt</div>
+        </div>
+
+        <div class="song-card">
+          <div class="song-thumb">
+            <div class="song-cover g-blue"></div>
+            <div class="song-overlay">
+              <div class="mini-play"><i class="ti ti-player-play"></i></div>
+            </div>
+          </div>
+          <div class="song-title">Waves of Time</div>
+          <div class="song-artist">Lana Rivers</div>
+        </div>
+
+        <div class="song-card">
+          <div class="song-thumb">
+            <div class="song-cover g-amber"></div>
+            <div class="song-overlay">
+              <div class="mini-play"><i class="ti ti-player-play"></i></div>
+            </div>
+          </div>
+          <div class="song-title">Electric Dreams</div>
+          <div class="song-artist">Mia Lowell</div>
+        </div>
+
+        <div class="song-card">
+          <div class="song-thumb">
+            <div class="song-cover g-purple"></div>
+            <div class="song-overlay">
+              <div class="mini-play"><i class="ti ti-player-play"></i></div>
+            </div>
+          </div>
+          <div class="song-title">Shadows &amp; Light</div>
+          <div class="song-artist">Ryan Miles</div>
+        </div>
+
+        <div class="song-card">
+          <div class="song-thumb">
+            <div class="song-cover g-rose"></div>
+            <div class="song-overlay">
+              <div class="mini-play"><i class="ti ti-player-play"></i></div>
+            </div>
+          </div>
+          <div class="song-title">Neon Pulse</div>
+          <div class="song-artist">Jade Adler</div>
+        </div>
+
+        <div class="song-card">
+          <div class="song-thumb">
+            <div class="song-cover g-green"></div>
+            <div class="song-overlay">
+              <div class="mini-play"><i class="ti ti-player-play"></i></div>
+            </div>
+          </div>
+          <div class="song-title">Forest Floor</div>
+          <div class="song-artist">Cleo Marsh</div>
+        </div>
+
+      </div>
+      <!-- /songs-grid -->
+
+    </div>
+    <!-- /content -->
+
+  </main>
+  <!-- /main -->
+
+  <!-- ══════════════════════════════════════════════════
+       PLAYER BAR
+  ══════════════════════════════════════════════════ -->
+  <div class="player-bar">
+
+    <!-- Now Playing -->
+    <div class="now-playing">
+      <div class="np-thumb">🎵</div>
+      <div>
+        <div class="np-title">Echoes of Midnight</div>
+        <div class="np-artist">Jon Hickman</div>
+      </div>
+    </div>
+
+    <!-- Controls + Progress -->
+    <div class="player-center">
+      <div class="ctrl-buttons">
+        <button class="ctrl-btn" aria-label="Previous">
+          <i class="ti ti-player-skip-back"></i>
+        </button>
+        <button class="ctrl-btn play-main" id="main-play-btn" onclick="togglePlay()" aria-label="Play/Pause">
+          <i class="ti ti-player-play" id="main-icon"></i>
+        </button>
+        <button class="ctrl-btn" aria-label="Next">
+          <i class="ti ti-player-skip-forward"></i>
+        </button>
+      </div>
+      <div class="progress-row">
+        <span class="time" id="cur-time">0:53</span>
+        <div class="progress-track" id="progress-track" onclick="seek(event)">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <span class="time end">3:58</span>
+      </div>
+    </div>
+
+    <!-- Volume + Actions -->
+    <div class="player-right">
+      <button class="ctrl-btn" aria-label="Like"><i class="ti ti-heart"></i></button>
+      <button class="ctrl-btn" aria-label="Shuffle"><i class="ti ti-arrows-shuffle"></i></button>
+      <div class="vol-wrap">
+        <i class="ti ti-volume vol-icon"></i>
+        <div class="vol-bar">
+          <div class="vol-fill"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- /player-bar -->
+
+</div>
+<!-- /app -->
+
+<script>
+  /* ── Navigation ───────────────────────────────────── */
+  function setNav(el) {
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  /* ── Category pills ───────────────────────────────── */
+  function setCat(el) {
+    document.querySelectorAll('.cat-pill').forEach(c => c.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  /* ── Playback ─────────────────────────────────────── */
+  let playing    = false;
+  let currentPct = 27;
+  let animFrame;
+
+  function togglePlay() {
+    playing = !playing;
+    ['hero-icon', 'main-icon'].forEach(id => {
+      document.getElementById(id).className =
+        playing ? 'ti ti-player-pause' : 'ti ti-player-play';
+    });
+    playing ? animateProgress() : cancelAnimationFrame(animFrame);
+  }
+
+  function animateProgress() {
+    if (!playing) return;
+    currentPct += 0.005;
+    if (currentPct >= 100) currentPct = 0;
+
+    document.getElementById('progress-fill').style.width = currentPct + '%';
+
+    const totalSec = 238;
+    const elapsed  = Math.round((currentPct / 100) * totalSec);
+    const m = Math.floor(elapsed / 60);
+    const s = elapsed % 60;
+    document.getElementById('cur-time').textContent =
+      m + ':' + String(s).padStart(2, '0');
+
+    animFrame = requestAnimationFrame(animateProgress);
+  }
+
+  /* ── Seek on click ────────────────────────────────── */
+  function seek(e) {
+    const track = document.getElementById('progress-track');
+    const rect  = track.getBoundingClientRect();
+    currentPct  = Math.max(0, Math.min(100,
+      ((e.clientX - rect.left) / rect.width) * 100
+    ));
+    document.getElementById('progress-fill').style.width = currentPct + '%';
+  }
+</script>
+
+</body>
+</html>
