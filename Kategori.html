@@ -3,73 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kategori</title>
+  <title>Kategori - MusikMantapKaliBah</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-  <link rel="stylesheet" href="Music.css">
+  <link rel="stylesheet" href="Kategori.css">
 </head>
 <body>
+
+<div class="app">
     
-  <!-- ══════════════════════════════════════════════════
-      SIDEBAR
-  ══════════════════════════════════════════════════ -->
-  <!-- SIDEBAR -->
   <aside class="sidebar">
 
     <div class="logo">
-      <i class="ti ti-music"></i>
+      <span class="material-symbols-outlined">music_note_2</span>
       MusikMantapKaliBah
     </div>
 
-    <nav class="nav-section">
-      <a href="HomePage.html" class="nav-item" >
-        <span class="material-symbols-outlined">home</span>Home
-      </a>
-      <a href="#" class="nav-item active">
-        <span class="material-symbols-outlined">view_cozy</span>Kategori
-      </a>
-      <a href="Koleksi.html" class="nav-item">
-        <span class="material-symbols-outlined">bookmark</span>Koleksi
-      </a>
-    </nav>
+      <nav class="nav-section">
+        <a href="HomePage.html" class="nav-item">
+          <span class="material-symbols-outlined">home</span>Home
+        </a>
+        <a href="#" class="nav-item active">
+          <span class="material-symbols-outlined">view_cozy</span>Kategori
+        </a>
+        <a href="Koleksi.html" class="nav-item">
+          <span class="material-symbols-outlined">bookmark</span>Koleksi
+        </a>
+      </nav>
 
-        <div class="playlist-section">
-      <div class="playlist-header">
-        <span class="material-symbols-outlined">library_music</span>
-        Playlists
-        <i class="ti ti-chevron-down arrow"></i>
+      <div class="playlist-section">
+        <div class="playlist-header">
+          <span class="material-symbols-outlined">library_music</span>
+          Playlists
+          <span class="material-symbols-outlined arrow">expand_more</span>
+        </div>
+
+        <div class="playlist-item"><div class="pl-thumb pl-1"></div>Playlist Yudis</div>
+        <div class="playlist-item"><div class="pl-thumb pl-2"></div>Playlist Fardhan</div>
+        <div class="playlist-item"><div class="pl-thumb pl-3"></div>Playlist Reyhan</div>
+        <div class="playlist-item"><div class="pl-thumb pl-4"></div>Playlist Lita</div>
       </div>
 
-      <div class="playlist-item">
-        <div class="pl-thumb pl-1"></div>
-        Playlist Yudis
+      <div class="sidebar-footer">
+        <a href="Login/Login.html" style="text-decoration: none; color: inherit;">
+          <div class="logout-btn">
+            <span class="material-symbols-outlined">logout</span>
+            Logout
+          </div>
+        </a>
       </div>
+    </aside>
+      
+  <!-- ══════════════════════════════════════════════════
+      MAIN CONTENT
+  ══════════════════════════════════════════════════ -->
+    <main class="main">
 
-      <div class="playlist-item">
-        <div class="pl-thumb pl-2"></div>
-        Playlist Fardhan
+    <!-- ── Top Bar ─────────────────────────────────── -->
+    <div class="topbar">
+      <div class="search-wrap">
+        <span class="material-symbols-outlined">search</span>
+        <input class="search-input" type="text" placeholder="Search for a song, artist or album" />
       </div>
-
-      <div class="playlist-item">
-        <div class="pl-thumb pl-3"></div>
-        Playlist Reyhan
-      </div>
-
-      <div class="playlist-item">
-        <div class="pl-thumb pl-4"></div>
-        Playlist Lita 
+      <div class="topbar-right">
+        <div class="user-chip">
+          <div class="avatar">MH</div>
+          <div>
+            <div class="user-name">Molly Hunter</div>
+            <div class="user-tag">Premium</div>
+          </div>
+        </div>
+        <span class="material-symbols-outlined">favorite</span>
+        <span class="material-symbols-outlined">settings</span>
       </div>
     </div>
+    
+      <div class="content">
+        
+        <div class="section-hdr">
+          <h3>Jelajahi Semua Kategori</h3>
+        </div>
 
-    <div class="sidebar-footer">
-      <a href="Login/Login.html" style="text-decoration: none; color: inherit;">
-    <div class="logout-btn">
-      <span class="material-symbols-outlined">logout</span>
-      Logout
-    </div>
-      </a>
-    </div> 
-  </aside>
+        <div class="category-grid">
+          
+          <div class="cat-card g-orange">
+            <h4>Pop Indonesia</h4>
+            <span class="material-symbols-outlined cat-icon">trending_up</span>
+          </div>
 
+          <div class="cat-card g-purple">
+            <h4>Rock & Metal</h4>
+            <span class="material-symbols-outlined cat-icon">skull</span>
+          </div>
+
+          <div class="cat-card g-blue">
+            <h4>Gaming Beats</h4>
+            <span class="material-symbols-outlined cat-icon">sports_esports</span>
+          </div>
+
+          <div class="cat-card g-teal">
+            <h4>Chill & Santai</h4>
+            <span class="material-symbols-outlined cat-icon">bedtime</span>
+          </div>
+
+          <div class="cat-card g-rose">
+            <h4>Anime OST</h4>
+            <span class="material-symbols-outlined cat-icon">animation</span>
+          </div>
+
+          <div class="cat-card g-amber">
+            <h4>Jazz & Blues</h4>
+            <span class="material-symbols-outlined cat-icon">album</span>
+          </div>
+
+          <div class="cat-card g-green">
+            <h4>Hip Hop</h4>
+            <span class="material-symbols-outlined cat-icon">mic</span>
+          </div>
+
+          <div class="cat-card g-orange">
+            <h4>K-Pop</h4>
+            <span class="material-symbols-outlined cat-icon">favorite</span>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
 
     <!-- ══════════════════════════════════════════════════
        PLAYER BAR
@@ -107,7 +166,7 @@
       </div>
     </div>
 
-    <!-- Volume + Actions -->
+    <!-- Volume + Actions --> 
     <div class="player-right">
       <button class="ctrl-btn" aria-label="Like"><i class="ti ti-heart"></i></button>
       <button class="ctrl-btn" aria-label="Shuffle"><i class="ti ti-arrows-shuffle"></i></button>
@@ -120,6 +179,8 @@
     </div>
 
   </div>
+
+</div>
 
 </body>
 </html>

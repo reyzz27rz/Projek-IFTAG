@@ -23,6 +23,7 @@
   --muted:   #888888; 
   --bg2:     #1c1c1c; 
   --bg3:     #252525; 
+  --bg4:     #2e2e2e;
   --text:    #f0f0f0;
 }
 
@@ -104,6 +105,7 @@ body {
   color: var(--muted);
   font-size: 13px;
   cursor: pointer;
+  color: var(--text);
 }
 .playlist-header i {
   font-size: 17px;
