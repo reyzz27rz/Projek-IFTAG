@@ -5,79 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RhythmoTune — Koleksi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css" />
   <link rel="stylesheet" href="Koleksi.css">
 </head>
 <body>
 
 <!-- ───── SIDEBAR ───── -->
 <aside class="sidebar">
+
   <div class="logo">
-    <svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 3C7 3 3 7 3 12s4 9 9 9 9-4 9-9-4-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm-1-11v6l4-3-4-3z"/>
-    </svg>
-    RhythmoTune
+    <i class="ti ti-music"></i>
+    MusikMantapKaliBah
   </div>
 
-  <div class="nav-section">
-    <div class="nav-label">Menuk</div>
-    <div class="nav-item">
-      
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
-      Beranda
-    </div>
-    <div class="nav-item active">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-      Koleksi
-    </div>
-    <div class="nav-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="9" r="6"/><path d="M15 12a6 6 0 1 1 0 12 6 6 0 0 1 0-12z"/></svg>
-      Kategori
-    </div>
-    <div class="nav-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-      Artis
-    </div>
-  </div>
+  <nav class="nav-section">
+    <a href="HomePage.html" class="nav-item">
+      <i class="ti ti-home"></i> Home
+    </a>
 
-  <div class="nav-section">
-    <div class="nav-label">Playlist Saya</div>
-    <div class="nav-item">
-      <img class="playlist-thumb" src="https://picsum.photos/seed/chill/40" alt="">
-      <div class="playlist-info">
-        <span class="playlist-name">Vibes &amp; Chill</span>
-        <span class="playlist-count">24 lagu</span>
-      </div>
+    <a href="Kategori.html" class="nav-item">
+      <i class="ti ti-layout-grid"></i>Kategori
+    </a>
+
+    <a href="Koleksi.html" class="nav-item active">
+      <i class="ti ti-user"></i> Koleksi
+    </a>
+  </nav>
+
+  <div class="playlist-section">
+    <div class="playlist-header">
+      <i class="ti ti-list"></i>
+      Playlists
+      <i class="ti ti-chevron-down arrow"></i>
     </div>
-    <div class="nav-item">
-      <img class="playlist-thumb" src="https://picsum.photos/seed/morn/40" alt="">
-      <div class="playlist-info">
-        <span class="playlist-name">Morning Boost</span>
-        <span class="playlist-count">18 lagu</span>
-      </div>
+
+    <div class="playlist-item">
+      <div class="pl-thumb pl-1"></div>
+      Playlist Yudis
     </div>
-    <div class="nav-item">
-      <img class="playlist-thumb" src="https://picsum.photos/seed/rhythm/40" alt="">
-      <div class="playlist-info">
-        <span class="playlist-name">Rhythm &amp; Energy</span>
-        <span class="playlist-count">31 lagu</span>
-      </div>
+
+    <div class="playlist-item">
+      <div class="pl-thumb pl-2"></div>
+      Playlist Fardhan
     </div>
-    <div class="nav-item">
-      <img class="playlist-thumb" src="https://picsum.photos/seed/late/40" alt="">
-      <div class="playlist-info">
-        <span class="playlist-name">Late Night Drive</span>
-        <span class="playlist-count">12 lagu</span>
-      </div>
+
+    <div class="playlist-item">
+      <div class="pl-thumb pl-3"></div>
+      Playlist Reyhan
+    </div>
+
+    <div class="playlist-item">
+      <div class="pl-thumb pl-4"></div>
+      Playlist Lita
     </div>
   </div>
 
   <div class="sidebar-footer">
-    <div class="nav-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16,17 21,12 16,7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
-      Keluar
+    <div class="logout-btn">
+      Logout
     </div>
   </div>
+
 </aside>
 
 <!-- ───── MAIN ───── -->
