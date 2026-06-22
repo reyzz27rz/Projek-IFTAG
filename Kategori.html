@@ -61,15 +61,65 @@
     </div>
 
     <div class="sidebar-footer">
-  <a href="Login/Login.html" style="text-decoration: none; color: inherit;">
+      <a href="Login/Login.html" style="text-decoration: none; color: inherit;">
     <div class="logout-btn">
       <span class="material-symbols-outlined">logout</span>
       Logout
     </div>
-  </a>
-</div>
+      </a>
+    </div> 
   </aside>
 
+
+    <!-- ══════════════════════════════════════════════════
+       PLAYER BAR
+  ══════════════════════════════════════════════════ -->
+  <div class="player-bar">
+
+    <!-- Now Playing -->
+    <div class="now-playing">
+      <div class="np-thumb">🎵</div>
+      <div>
+        <div class="np-title">Echoes of Midnight</div>
+        <div class="np-artist">Jon Hickman</div>
+      </div>
+    </div>
+
+    <!-- Controls + Progress -->
+    <div class="player-center">
+      <div class="ctrl-buttons">
+        <button class="ctrl-btn" aria-label="Previous">
+          <span class="material-symbols-outlined">skip_previous</span>
+        </button>
+        <button class="ctrl-btn play-main" id="main-play-btn" onclick="togglePlay()" aria-label="Play/Pause">
+          <span class="material-symbols-outlined">play_arrow</span>
+        </button>
+        <button class="ctrl-btn" aria-label="Next">
+          <span class="material-symbols-outlined">skip_next</span>
+        </button>
+      </div>
+      <div class="progress-row">
+        <span class="time" id="cur-time">0:53</span>
+        <div class="progress-track" id="progress-track" onclick="seek(event)">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <span class="time end">3:58</span>
+      </div>
+    </div>
+
+    <!-- Volume + Actions -->
+    <div class="player-right">
+      <button class="ctrl-btn" aria-label="Like"><i class="ti ti-heart"></i></button>
+      <button class="ctrl-btn" aria-label="Shuffle"><i class="ti ti-arrows-shuffle"></i></button>
+      <div class="vol-wrap">
+        <span class="material-symbols-outlined">volume_up</span>
+        <div class="vol-bar">
+          <div class="vol-fill"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </body>
 </html>

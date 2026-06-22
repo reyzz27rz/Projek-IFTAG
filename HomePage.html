@@ -271,7 +271,7 @@
       </div>
     </div>
 
-    <!-- Volume + Actions -->
+    <!-- Volume + Actions --> 
     <div class="player-right">
       <button class="ctrl-btn" aria-label="Like"><i class="ti ti-heart"></i></button>
       <button class="ctrl-btn" aria-label="Shuffle"><i class="ti ti-arrows-shuffle"></i></button>
@@ -322,7 +322,7 @@
     if (currentPct >= 100) currentPct = 0;
 
     document.getElementById('progress-fill').style.width = currentPct + '%';
-
+    
     const totalSec = 238;
     const elapsed  = Math.round((currentPct / 100) * totalSec);
     const m = Math.floor(elapsed / 60);
