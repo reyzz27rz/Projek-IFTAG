@@ -23,6 +23,8 @@ html, body {
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   color: var(--text);
   font-size: 14px;
+  scrollbar-color: var(--muted) var(--bg);
+  scrollbar-width: thin;
 }
 
 /* ══════════════════════════════════════════════════════
