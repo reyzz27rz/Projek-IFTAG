@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MusicMantap</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
   <link rel="stylesheet" href="Music.css">
 </head>
 <body>
@@ -20,20 +20,20 @@
     </div>
 
     <nav class="nav-section">
-      <a class="nav-item active" >
-        <i class="ti ti-home"></i> Home
+      <a href="#" class="nav-item active" >
+        <span class="material-symbols-outlined">home</span>Home
       </a>
       <a href="Kategori.html" class="nav-item">
-        <i class="ti ti-layout-grid"></i>Kategori
+        <span class="material-symbols-outlined">view_cozy</span>Kategori
       </a>
       <a href="Koleksi.html" class="nav-item">
-        <i class="ti ti-user"></i> Koleksi
+        <span class="material-symbols-outlined">bookmark</span>Koleksi
       </a>
     </nav>
 
     <div class="playlist-section">
       <div class="playlist-header">
-        <i class="ti ti-list"></i>
+        <span class="material-symbols-outlined">library_music</span>
         Playlists
         <i class="ti ti-chevron-down arrow"></i>
       </div>
@@ -60,10 +60,13 @@
     </div>
 
     <div class="sidebar-footer">
-      <div class="logout-btn">
-        Logout
-      </div>
+  <a href="Login/Login.html" style="text-decoration: none; color: inherit;">
+    <div class="logout-btn">
+      <span class="material-symbols-outlined">logout</span>
+      Logout
     </div>
+  </a>
+</div>
 
   </aside>
 
@@ -75,7 +78,7 @@
     <!-- ── Top Bar ─────────────────────────────────── -->
     <div class="topbar">
       <div class="search-wrap">
-        <i class="ti ti-search"></i>
+        <span class="material-symbols-outlined">search</span>
         <input class="search-input" type="text" placeholder="Search for a song, artist or album" />
       </div>
       <div class="topbar-right">
@@ -86,8 +89,8 @@
             <div class="user-tag">Premium</div>
           </div>
         </div>
-        <div class="icon-btn"><i class="ti ti-heart"></i></div>
-        <div class="icon-btn"><i class="ti ti-settings"></i></div>
+        <span class="material-symbols-outlined">favorite</span>
+        <span class="material-symbols-outlined">settings</span>
       </div>
     </div>
 
@@ -250,13 +253,13 @@
     <div class="player-center">
       <div class="ctrl-buttons">
         <button class="ctrl-btn" aria-label="Previous">
-          <i class="ti ti-player-skip-back"></i>
+          <span class="material-symbols-outlined">skip_previous</span>
         </button>
         <button class="ctrl-btn play-main" id="main-play-btn" onclick="togglePlay()" aria-label="Play/Pause">
-          <i class="ti ti-player-play" id="main-icon"></i>
+          <span class="material-symbols-outlined">play_arrow</span>
         </button>
         <button class="ctrl-btn" aria-label="Next">
-          <i class="ti ti-player-skip-forward"></i>
+          <span class="material-symbols-outlined">skip_next</span>
         </button>
       </div>
       <div class="progress-row">
@@ -273,7 +276,7 @@
       <button class="ctrl-btn" aria-label="Like"><i class="ti ti-heart"></i></button>
       <button class="ctrl-btn" aria-label="Shuffle"><i class="ti ti-arrows-shuffle"></i></button>
       <div class="vol-wrap">
-        <i class="ti ti-volume vol-icon"></i>
+        <span class="material-symbols-outlined">volume_up</span>
         <div class="vol-bar">
           <div class="vol-fill"></div>
         </div>
