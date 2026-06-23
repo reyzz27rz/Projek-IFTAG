@@ -815,3 +815,10 @@ html, body {
   background-size: cover;
   background-position: center top;
 }
+
+/* FOTO FOTO MUSIK */
+.foto-hindia1 {
+  background-image: url('Foto/hindia1.jpg');
+  background-size: cover;
+  background-position: center top;
+}
