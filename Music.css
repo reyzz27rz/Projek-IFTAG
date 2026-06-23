@@ -347,18 +347,72 @@ html, body {
   filter: brightness(0.85);
 }
 
-/* Gradient colour helpers */
-.g-orange {
-  background-image: url('Foto/Menari\ Dengan\ Bayangan.jpg');
+/* FOTO FOTO MUSIK */
+.foto-hindia1 {
+  background-image: url('Foto/hindia1.jpg');
   background-size: cover;
-  background-position: center top; /* Memprioritaskan gambar bagian atas agar wajah tidak terpotong ke bawah */
+  background-position: center top;
 }
-.g-purple { background: linear-gradient(145deg, #3b0764 0%, #7c3aed 55%, #a78bfa 100%); }
-.g-blue   { background: linear-gradient(145deg, #1e3a5f 0%, #2563eb 55%, #7dd3fc 100%); }
-.g-teal   { background: linear-gradient(145deg, #134e4a 0%, #0d9488 55%, #5eead4 100%); }
-.g-rose   { background: linear-gradient(145deg, #881337 0%, #e11d48 55%, #fda4af 100%); }
-.g-amber  { background: linear-gradient(145deg, #78350f 0%, #d97706 55%, #fcd34d 100%); }
-.g-green  { background: linear-gradient(145deg, #14532d 0%, #16a34a 55%, #86efac 100%); }
+
+.foto-hindia2 {  background-image: url('Foto/hindia2.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
+.foto-hindia3   { 
+  background-image: url('Foto/hindia3.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
+.foto-jvke1   {
+  background-image: url('Foto/jvke1.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
+.foto-jvke2   {   
+  background-image: url('Foto/jvke2.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
+.foto-yungkai1  {  
+  background-image: url('Foto/yungkai1.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
+.foto-rexorange1  {  
+  background-image: url('Foto/rexorange1.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
+.foto-feast1  {  
+  background-image: url('Foto/feast1.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
+.foto-sombr1  {  
+  background-image: url('Foto/sombr1.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
+.foto-aboutyou1  {  
+  background-image: url('Foto/aboutyou1.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
+.foto-stereolove1  {  
+  background-image: url('Foto/stereolove1.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
 
 /* Hero card overlay text */
 .hero-meta {

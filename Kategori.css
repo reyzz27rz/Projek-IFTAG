@@ -790,3 +790,28 @@ html, body {
   color: white;
   transform: rotate(10deg);
 }
+
+/* FOTO MUSIK */
+.foto-feast1  {  
+  background-image: url('Foto/feast1.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
+.foto-jvke1   {
+  background-image: url('Foto/jvke1.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
+.foto-yungkai1  {  
+  background-image: url('Foto/yungkai1.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
+.foto-rexorange1  {  
+  background-image: url('Foto/rexorange1.jpg');
+  background-size: cover;
+  background-position: center top;
+}
